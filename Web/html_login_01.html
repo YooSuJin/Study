@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kimperro">
+    <meta name="description" content="form태그를 이용한 로그인 창 실습 예제 입니다.">
+    <meta name="keywords" content="from,login">
+    <meta name="generator" content="brackets">
+    <title>로그인/회원가입</title>
+    <style type="text/css">
+        body,
+        p {
+            font-size: 13px;
+        }
+
+        em {
+            font-style: normal;
+            font-size: 11px;
+        }
+        
+        span {
+            
+        }
+
+        form fieldset {
+            margin: 10px 0;
+            width: 600px;
+        }
+
+        form legend {
+            font-weight: bold;
+        }
+
+        form ul li {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        form label {
+            width: 150px;
+            float: left;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <h2>
+        <font stlye="vertical-align: inherit;">
+            <font stlye="vertical-align: inherit;">학생 로그인 </font>
+        </font>
+    </h2>
+    <form action="">
+            <fieldset>    
+
+            <legend>
+                    <font stlye="vertical-align: inherit;">학생 로그인 정보 </font>
+            </legend>
+                <ul>
+                    <li><label for="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit" ;>신분증:</font>
+                            </font>
+                        </label>
+                        <input type="text" size="15">
+                    </li>
+                    <li><label for="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit" ;>암호:</font>
+                            </font>
+                        </label>
+                        <input type="password" size="15">
+                    </li>
+                    <li><label for="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit" ;>비밀번호 확인:</font>
+                            </font>
+                        </label>
+                        <input type="password" size="15">
+                    </li>
+                </ul>
+         </fieldset>
+
+        <button class="bt" type="submit">로그인</button>
+        <button class="bt" type="reset">Reset</button>
+<h2>
+
+            <font stlye="vertical-align: inherit;">신입생 가입 </font>
+
+</h2>
+
+            <fieldset>    
+
+            <legend>
+                    <font stlye="vertical-align: inherit;">학생 로그인 정보 </font>
+            </legend>
+                <ul>
+                    <li><label for="#">
+                                <font style="vertical-align: inherit" ;>이름:</font>
+                        </label>
+                        <input type="text" size="15">
+                    </li>
+                    <li><label for="#">
+                                <font style="vertical-align: inherit" ;>이메일:</font>
+                        </label>
+                        <input type="text" size="15">
+                    </li>
+                    <li><label for="#">
+                                <font style="vertical-align: inherit" ;>접촉:</font>
+                        </label>
+                        <input type="text" size="15">
+                    </li>
+                    <li><label for="#">
+                                <font style="vertical-align: inherit" ;>블로그/홈페이지:</font>
+                        </label>
+                        <input type="text" size="15">
+                    </li>
+                    <li><label for="class">
+                                <font style="vertical-align: inherit" ;>부서선택:</font>
+                        </label>
+                        <select id="class">
+                            <optgroup label="공과대학">
+                                <option value="archi">건축 공학과</option>
+                                <option value="mechanic">기계 공학</option>
+                                <option value="indust">산업 공학</option>
+                                <option value="elec">전기 전자 공학</option>
+                                <option value="computer">컴퓨터 공학</option>
+                                <option value="chemical">화학 공학</option>
+                            </optgroup>
+                            <optgroup label="인문대학">
+                               <option value="history">역사학과</option>
+                               <option value="lang">언어학과</option>
+                               <option value="philo">철학과</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                </ul>
+         </fieldset>
+
+
+
+ 
+
+ 
+
+                <fieldset>
+                <legend>
+                    코스를 선택하세요
+                </legend>
+                <ul>
+                    <li><label class="reg" for="spk">신청코스 <em>&#40;회화&#41;</em></label>
+                    <input type="radio" id="spk" value="low">영어회화&#40;초등&#41;
+                    <input type="radio" id="spk" value="middle">영어회화&#40;중급&#41;
+                    <input type="radio" id="spk" value="high">영어회화&#40;고급&#41;
+                    </li>
+                    <li><label class="reg" for="cert">지원 과정 <em>&#40;자격&#41;</em></label>
+                    <input type="radio" id="cert" value="toeic">토익
+                    <input type="radio" id="cert" value="topple">토플
+                    <input type="radio" id="cert" value="opic">OPIC</li>
+                    <li>
+                        <label class="reg" for="pre">이해</label>
+                        <input type="checkbox" id="pre" value="grammar">문법
+                        <input type="checkbox" id="pre" value="voca">Vocaburary
+                        <input type="checkbox" id="pre" value="conver"> 대화
+                        <input type="checkbox" id="pre" value="listening"> 청취
+                        <input type="checkbox" id="pre" value="news"> 뉴스듣기
+                        <input type="checkbox" id="pre" value="reading"> 독서
+                    </li>
+                </ul>
+
+                </fieldset>
+
+<fieldset id="upload">
+        <legend>
+            학생증 사본 업로드
+        </legend>
+        <label for="student_cert">
+            <span>
+               <font style ="vertical-align: inherit;">
+                학생증 사본
+                </font>
+            </span>
+            <input type="file" id="student_cert">
+        </label>
+</fieldset>
+
+      <fieldset id="text">
+          <legend>
+              문의 사항을 입력하세요.
+          </legend>
+          <textarea cols="70" rows="5"></textarea>
+      </fieldset>
+       
+       
+        </form>
+                <button class="bt" type="submit">가입하기</button>
+                <button class="bt" type="reset">Reset</button>
+</body>
+
+</html>
+
+
+<!-- 인풋 요소 많은것 이제 깨달음 , 인풋 요소의 value 기능 꺠달음 , select,textarea 뉴 기능 접함
+
+
+의문 : label에 별다른 스타일을 주지 않을건데 왜 class 네임을 지정해 주는지? 나중에 스타일 줄것을 대비해서? 
+
+2020.08.31
+
+
+-->
