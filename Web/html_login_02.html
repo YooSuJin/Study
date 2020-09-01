@@ -1,0 +1,144 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kimperro">
+    <meta name="description" content="form태그를 이용한 로그인 창 실습 예제 입니다.">
+    <meta name="keywords" content="from,login">
+    <meta name="generator" content="brackets">
+    <title>특강 신청하기</title>
+    <style type="text/css">
+        body {
+            font-size: 16px;
+        }
+        
+        h2 {
+            padding-top: 20px;
+            font-weight: 500;
+            font-size: 28px;
+        }
+
+        from {}
+
+        form fieldset {
+            width: 600px;
+            margin: 15px 0;
+        }
+
+        form legend {
+            font-weight: bold;
+        }
+
+        form ul li {
+            list-style: none;
+            margin: 10px 0;
+        }
+        
+        /*
+        form label{
+            width: 150px;
+            float: left;
+
+        }
+        */
+        
+        span {
+            width: 150px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> Mailing List</h2>
+    <form action>
+        E-mail
+        <input type="text" id="mail" size="30">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <h2>Login</h2>
+    <form action>
+        ID:
+        <input type="text" id="ID" size="15">
+        PW:
+        <input type="password" id="pw" size="15">
+        <button>Login</button>
+    </form>
+
+
+    <h2>여름방학 특강 신청하기</h2>
+    <form>
+        <fieldset>
+            <legend>교육과정</legend>
+            <ul>
+                <li>영어회화
+                    <input type="text" id="mail" size="15" placeholder="오전 9:00~11:00"> &#40;초급레벨&#41;
+                </li>
+            </ul>
+
+        </fieldset>
+        <fieldset>
+            <legend>신청자 기본정보</legend>
+            <ul>
+                <li>
+                    <span>이름</span>
+                    <input type="text" id="name" size="15">
+                </li>
+                <li>
+                    <span>이메일</span>
+                    <input type="text" id="mail" size="15">
+                </li>
+                <li>
+                    <span>비밀번호</span>
+                    <input type="password" id="pw" size="15">
+                </li>
+                <li>
+                    <span>학과</span>
+                    <select label for="class">
+                       <option value="strat">학과를 선택하세요.</option>
+                        <option value="archi">건축 공학과</option>
+                        <option value="mechanic">기계 공학</option>
+                        <option value="indust">산업 공학</option>
+                        <option value="elec">전기 전자 공학</option>
+                    </select>
+                </li>
+                <li>
+                    <span>성별</span>
+                    <input type="radio" id="man"><label for="man">남자</label>
+                    <input type="radio" id="woman"><label for="woman">여자</label>
+                </li>
+                <li>
+                    <span>관심사</span>
+                    <input type="checkbox" id="trip"><label for="trip">여행</label>
+                    <input type="checkbox" id="game"><label for="game">게임</label>
+                    <input type="checkbox" id="live"><label for="live">공연</label>
+                    <input type="checkbox" id="exc"><label for="exc">운동</label>
+                    <input type="checkbox" id="etc"><label for="etc">기타</label>
+                </li>
+            </ul>
+
+
+
+        </fieldset>
+    </form>
+    <button type="button">수강신청</button>
+    <button type="reset">다시쓰기</button>
+</body>
+</html>
+
+
+<!-- 2020.09.01 아직도 float 속성 너무 헷갈ㄹ려어어ㅓ어ㅓㅓ어
+
+
+label에 스타일을 줘서 정렬을 시켰는데
+그러면 텍스트클릭시 체크박스에 체크가 되는 연결이 안됨.
+서로 중구난방 정렬
+지금 label로 묶은거를 다른걸로 묶을수 있지않을까??구지 왜 label이어야하지?
+
+ㄴ해결함! label 로 안묶고 span으로 묶은 후 float 정렬 주엇다 랏다랏다라
+그래서 텍스트랑 체크박스도 연결 삽가넝~~~!
+
+인풋박스 다음에 텍스트를 어떻게...나란히 두죠...?
+
+-->
