@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kimperro">
+    <title>div float 후 수평정렬</title>
+
+    <style type="text/css">
+        .container {
+            border: 5px solid #000;
+            height: 100%;
+            width: 100%;
+           margin: auto;
+        }
+
+        .content {
+            border: 5px solid skyblue;
+            height: 200px;
+            width: 800px;
+            margin: auto;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            border: 5px solid blue;
+            height: 200px;
+            width: 200px;
+            box-sizing: border-box;
+            float: left;            
+        }
+        .box5
+           {border: 5px solid blue;
+            height: 200px;
+            width: 200px;
+            clear: both;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <!--<div class="box5"></div>-->
+        </div>
+    </div>
+</body></html>
+
+
+
+
+<!-- 2020.09.02 
+
+
+css다중 선택시 class 네임 앞에 .다 붙여줘야 적용 됩니다
+float아직도 ㅈㄴ 헷갈립니다
+
+
+-->

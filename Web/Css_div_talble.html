@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kimperro">
+    <title>div float 후 수평정렬</title>
+
+    <style type="text/css">
+        /*헤더*/
+        #headerbox {
+            border: 5px solid #000;
+            width: 100%;
+            height: 600px;
+            display: table;
+        }
+
+        #headerbox div {
+            border: 5px solid skyblue;
+            width: 100%;
+            height: 590px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #headerbox table {
+            border: 5px solid yellow;
+            width: 550px;
+            height: auto;
+            margin: auto;
+            
+        }
+
+        /*바디*/
+        #bodybox {
+            border: 5px solid #000;
+            width: 100%;
+            height: 150px;
+            display: table;
+        }
+
+        #bodybox div {
+            border: 5px solid skyblue;
+            width: 100%;
+            height: 140px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #bodybox table {
+            border: 5px solid yellow;
+            width: 550px;
+            height: auto;
+            margin: auto;
+        }
+/*푸터*/
+        #footerbox {
+            border: 5px solid #000;
+            width: 100%;
+            height: 150px;
+            display: table;
+        }
+
+        #footerbox div {
+            border: 5px solid skyblue;
+            width: 100%;
+            height: 140px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #footerbox table {
+            border: 5px solid yellow;
+            width: 550px;
+            height: auto;
+            margin:auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="headerbox">
+        <div>
+            <table>
+                <tr>
+                    <td>headerBox</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="bodybox">
+        <div>
+            <table>
+                <tr>
+                    <td>BodyBox</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="footerbox">
+        <div>
+            <table>
+                <tr>
+                    <td>FooterBox</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body></html>
+
+
+
+
+<!--2020.09.02 
+
+
+display요소에 table/ table cell 이 있는지 몰랐음
+vertical-align 테이블 요소에서 수직정렬할수 있는 태그
+
+근데 테이블요소 자체가 html5에서 지원하지않음 요샌 div로 레이아웃 잡음 ㅇㅅㅇ
+
+-->
