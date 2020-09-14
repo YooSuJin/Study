@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>인프런 패럴랙스 스크롤링</title>
+        <meta name="viewport" content="width=decive-width, initial-scale=1,maximum-scale=1">
+    <!--뷰포트 설정 / 웹을 실행하는 기기에 맞춰 화면 크기 조정 -->
+<link href="css/parallax.css" rel="stylesheet">
+   
+    </head>
+<body>
+    <div id="warp">
+        <div id="ms1" class="container bg-holder" data-width="1024" data-height="768">
+        <secion class="content">
+            <h3>별 헤는 밤</h3>
+            <p>별에도 쉬이 이름을 북간도에 봅니다.</p>
+            <div class="icon"> 
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+</svg>
+       </div>
+        </secion>
+        </div>
+        
+        
+        
+        <div id="ms2" class="container bg-holder" data-width="1024" data-height="768">
+        <secion class="content">
+        <h3>청춘 예찬</h3>
+        <p>자신과 새가 돋고, 인생을 위하여서, 교향악이다.</p>
+        <div class="icon">
+             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+</svg>
+        </div>
+            </secion>
+        </div>
+        
+        
+        <div id="ms3" class="container bg-holder" data-width="1000" data-height="588">
+           <secion class="content">
+            <h3>우리가 빛의 속도로 갈 수 없다면</h3>
+            <p>우리는 그곳에서 괴로울거야.<br>하지만 그보다 많이 행복할거야.</p>
+            <div class="icon"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+</svg></div>
+            </secion>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/jquery.parallax-scroll.min.js"></script>
+    <script>
+    $(function(){
+        $(window).resize(function(){
+            $('.container').width($(window).width()).height($(window).height());
+        }); 
+        setTimeout(function(){
+            $(window).resize()
+        },1000);
+$('.bg-holder').parallaxScroll({
+  friction: 0.5});
+});
+        
+    </script>
+    
+    
+</body>
+</html>
