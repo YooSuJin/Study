@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃 5 혼자 다시 만들어보기</title>
+
+    <style>
+        *{margin: 0 ; padding: 0; }
+        
+        body {
+            background-color: #D5E7EB
+        }
+
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 5;
+        }
+
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: #AED2F5
+        }
+
+        #banner {
+            width: 100%;
+            height: 400px;
+            background-color: #98CEF5;
+        }
+
+        #content1 .nav {
+            float: left;
+            width: 30%;
+            height: 500px;
+            background-color: #95B4DE;
+        }
+
+        .article1 {
+            float: left;
+            width: 70%;
+            height: 250px;
+            background-color: #C4D2F5;
+        }
+
+        .article2 {
+            float: left;
+            width: 70%;
+            height: 250px;
+            background-color: #91D3EB;
+        }
+
+        .con2box1 {
+            float: left;
+            width: 33.3333%;
+            height: 300px;
+            background-color: #959DDE;
+        }
+
+        .con2box2 {
+            float: left;
+            width: 33.3333%;
+            height: 300px;
+            background-color: #C6C4F5;
+        }
+
+        .con2box3 {
+            float: left;
+            width: 33.3333%;
+            height: 300px;
+            background-color: #D6D1EB;
+        }
+
+        #content3 {
+            overflow: hidden;
+            padding: 5%;
+            background-color: #E7E2EB;
+        }
+
+        .con3box1 {
+            float: left;
+            width: 23%;
+            margin:1%;
+            height: 240px;
+            background-color: #B69EDE;
+            border-radius: 15px;
+        }
+
+        .con3box2 {
+            float: left;
+            width: 23%;
+            margin: 1%;
+            height: 240px;
+            background-color: #B69EDE;
+            border-radius: 15px;
+        }
+
+        .con3box3 {
+            float: left;
+            width: 23%;
+            margin: 1%;
+            height: 240px;
+            background-color: #B69EDE;
+            border-radius: 15px;
+        }
+
+        .con3box4 {
+            float: left;
+            width: 23%;
+            margin: 1%;
+            height: 240px;
+            background-color: #B69EDE;
+            border-radius: 15px;
+        }
+        
+        footer {width: 100%; height: 100px; background-color: #B1A9F5;}
+        
+        
+        /*1220px 웹 */
+        @media (max-width:1220px){
+            #wrap{width: 100%;}   
+            .con2box1{width: 50%;}
+            .con2box2{width: 50%;}
+            .con2box3{display: none;}
+            
+            .con3box1{width: 31.3333%;}
+            .con3box2{width: 31.3333%;}
+            .con3box3{width: 31.3333%;}
+            .con3box4{display: none;}
+              }
+        
+        
+        @media (max-width:768px){
+            .con2box1{width: 100%;}
+            .con2box2{width: 100%;}
+            
+        }
+        
+        @media (max-width:480px){
+            #content1 .nav {width: 100%; height: 100px;}
+            .article1 {width: 100%;height: 200px;}
+            .article2 {width: 100%;height: 200px;}
+            
+            .con3box1 {width: 98%; border-radius: 5px;}
+            .con3box2 {width: 98%; border-radius: 5px;}
+            .con3box3 {width: 98%; border-radius: 5px;} 
+        }
+        
+            
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">header</header>
+        <section id="banner">banner</section>
+        <section id="content1">
+            <nav class="nav">nav</nav>
+            <article class="article1">article1</article>
+            <article class="article2">article2</article>
+        </section>
+
+
+        <section id="content2">
+            <article class="con2box1">con2box1</article>
+            <article class="con2box2">con2box2</article>
+            <article class="con2box3">con2box3</article>
+        </section>
+        <section id="content3">
+            <article class=con3box1>con3box1</article>
+            <article class=con3box2>con3box2</article>
+            <article class=con3box3>con3box3</article>
+            <article class=con3box4>con3box4</article>
+        </section>
+        <footer>footer</footer>
+
+    </div>
+</body></html>
