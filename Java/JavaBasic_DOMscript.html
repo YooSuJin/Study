@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>자바스크립트 기초</title>
+    
+    <style>
+        h1 {background: #fff000;}
+        .ppejo {display: inline-block; list-style: none;}
+        .ppejo img {width: 200px;}
+        .link-google {color: red;}
+        
+        .special {
+            background: pink;
+        }
+    </style>
+    
+    <script>
+    
+    //-- 정석대로 head안에 JS를 입력하면 내용을 못읽음 밑에있어서 글서 window.onload를 써서 읽게함--
+    /*    
+    window.onload=function(){
+    var title = document.getElementById('main-title');
+    console.log(title)
+    } 
+
+    */
+        
+        
+    //window.onload의 요즘스타일  
+    /*    
+
+    window.addEventListener('load', function(){
+        var title = document.getElementById('main-title');
+        console.log(title);
+    });   
+    */
+    
+   //DOM구조 판단만 하고 바로 실행해줌     
+   /*
+   
+   
+    window.addEventListener('DOMContentLoaded', function(){
+    var title = document.getElementById('main-title');
+    console.log(title); 
+    });
+    
+    */
+        
+
+    </script>
+    
+    
+</head>
+<body>
+<!--
+<h1 id="main-title"> 
+ <span>Hello 1 </span> <br>
+ <span>Hello 2</span> <br>
+ <span>Hello 3</span> <br>
+ DOM (Document Objects Model)</h1>
+  <article>
+      <header class="main-header">
+      header</header>
+      <section c>
+        <header>s header</header>
+        section1
+      </section>
+      <section>
+        <header>s header</header>
+        section2
+      </section>
+    <section>
+        <header>s header</header>
+        section3
+    </section>
+  </article>
+  -->
+  
+ <h1 id="main-title">DOM (Document Objects Model)</h1>
+  <ul class="mom">
+      <li class="ppejo"><img src="img/01.jpg" alt="">
+      <a class="link-google" href="https://google.com">Google</a></li>
+      <li class="ppejo"><img src="img/02.jpg" alt=""></li>
+      <li class="ppejo"><img src="img/03.jpg" alt=""></li>
+
+
+  </ul>
+   
+<script>
+    
+    //아래에 입력하면 저런 실행문 없이 바로 실행 쌉가넝
+    /* 
+    
+     var title = document.getElementById('main-title');
+    var titleSpan = title.getElementsByTagName('span');
+    console.log(titleSpan[1]);
+     */
+
+    //★querySelector / querySelectorAll 기억하슈
+    /*
+    
+
+     var ppejo = document.querySelector('.ppejo');
+    var ppejo = document.querySelectorAll('.ppejo');
+    for (var i = 0; i < ppejo.length; i++){
+    ppejo[i].style.border = '1px solid red' ; 
+    }
+    */
+    
+    //    getAttribute, setAttribute ---
+    /*
+    
+    var link = document.querySelector('.ppejo a');
+    console.log( link.getAttribute('href'));
+    link.setAttribute('href','https://studiomeal.com');
+    console.log(link.getAttribute('href'));
+    */
+    
+    //add 기존 클래스에 클래스 추가
+    /*
+    var link = document.querySelector('.ppejo a');
+    //link.className = 'special link-google'; 일일히 추가해줘야해서 잘안씀
+    link.classList.add('special','foo');
+    setTimeout(function(){
+        link.classList.remove('link-google');
+    },2000); //add를 사용하면 기존 클래스에 클래스 네임 추가 가능,2초후에 발현으로 세팅된겨
+    
+    console.log(link.classList.contains('special')); //클래스를 가지고있으믄 트루, 아니면 펄스
+    */
+    
+    //    JAVA로 html 입력 후 화면에 뜨게 조립까지 ---
+    /*
+
+    var listElem = document.createElement('li'); //태그를 추가함
+    listElem.innerHTML = '<span>김빼로</span>'; //html에 넣을수있음 아직 화면엔 실현안됨
+    var mom = document.querySelector('.mom'); //부모태그를 불러와서
+    mom.appendChild(listElem); //부모태그한테 appendChild로 자식태그를 실현시킴
+    console.log (listElem); // 이래야 html화면으로 구동가넝
+    
+    */
+    
+    
+    //--- 요정도는 외우셔야함 ^^ --//
+    
+    
+    
+</script> 
+
+   
+         
+</body>
+</html>
